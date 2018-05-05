@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland", "Ledian in Ghostland.csproj", "{BA323C25-325D-36A0-8294-24F2A190DB73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland.Plugins", "Ledian in Ghostland.Plugins.csproj", "{68BF6378-1B78-A24B-6525-1FB9894C1050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland.Editor.Plugins", "Ledian in Ghostland.Editor.Plugins.csproj", "{88DCA6E3-05B4-7625-576C-0B8DF4C77C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{BA323C25-325D-36A0-8294-24F2A190DB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA323C25-325D-36A0-8294-24F2A190DB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA323C25-325D-36A0-8294-24F2A190DB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BF6378-1B78-A24B-6525-1FB9894C1050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BF6378-1B78-A24B-6525-1FB9894C1050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BF6378-1B78-A24B-6525-1FB9894C1050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BF6378-1B78-A24B-6525-1FB9894C1050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DCA6E3-05B4-7625-576C-0B8DF4C77C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DCA6E3-05B4-7625-576C-0B8DF4C77C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DCA6E3-05B4-7625-576C-0B8DF4C77C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DCA6E3-05B4-7625-576C-0B8DF4C77C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

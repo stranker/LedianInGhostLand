@@ -7,7 +7,10 @@ using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class GameManager : MonoBehaviour {
-    [SerializeField] private GameObject tile;
+    [SerializeField] private GameObject tileChurch;
+    [SerializeField] private GameObject tileBarril;
+    [SerializeField] private GameObject tileDer;
+    [SerializeField] private GameObject tileIzq;
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] private Text hpLabel;
     [SerializeField] private Text pointsLabel;
@@ -19,6 +22,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameObject finalCamera;
     [SerializeField] private GameObject finalScreen;
     [SerializeField] public static int gamePoints;
+    private int[,] tileMap;
     private FirstPersonController player;
     public static int ghostKilled;
     public static int trapsDesactivated;
@@ -106,6 +110,32 @@ public class GameManager : MonoBehaviour {
                     Destroy(tiles[i].gameObject);
             }
         }
+        tileMap = new int[3, 3];
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+                tileMap[i, j] = UnityEngine.Random.Range(0, 3);
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (tileMap[i,j] == 2)
+                {
+                    if (j < 2)
+                        tileMap[i, j + 1] = 3;
+                    else
+                        tileMap[i, j] = UnityEngine.Random.Range(0, 1);
+                }
+                if (tileMap[i,j] == 3)
+                {
+                    if (j > 0 && tileMap[i,j-1] != 3)
+                        tileMap[i, j - 1] = 2;
+                    else
+                        tileMap[i, j] = UnityEngine.Random.Range(0, 1);
+                }
+            }
+        }
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -113,7 +143,32 @@ public class GameManager : MonoBehaviour {
                 Vector3 position = Vector3.zero;
                 position.x = i * 200;
                 position.z = j * 200;
-                Instantiate(tile, position, transform.rotation, terrain.transform);
+                switch (tileMap[i,j])
+                {
+                    case 0:
+                        {
+                            Instantiate(tileChurch, position, transform.rotation, terrain.transform);
+                            break;
+                        }
+                    case 1:
+                        {
+                            Instantiate(tileBarril, position, transform.rotation, terrain.transform);
+                            break;
+                        }
+                    case 2:
+                        {
+                            Instantiate(tileDer, position, transform.rotation, terrain.transform);
+                            break;
+                        }
+                    case 3:
+                        {
+                            Instantiate(tileIzq, position, transform.rotation, terrain.transform);
+                            break;
+                        }
+                    default:
+                        break;
+                }
+                
             }
         }
     }
@@ -127,7 +182,7 @@ public class GameManager : MonoBehaviour {
     private void GameInitialize()
     {
         CreateTerrain();
-        player = Instantiate(playerPrefab, transform.position, transform.rotation, transform.parent).GetComponent<FirstPersonController>();
+        player = Instantiate(playerPrefab, new Vector3(UnityEngine.Random.Range(100,500),40, UnityEngine.Random.Range(100, 500)), transform.rotation, transform.parent).GetComponent<FirstPersonController>();
         gameOver = false;
         ghostKilled = 0;
         trapsDesactivated = 0;
@@ -143,5 +198,10 @@ public class GameManager : MonoBehaviour {
     public FirstPersonController GetPlayer()
     {
         return player;
+    }
+
+    public void OnQuitPressed()
+    {
+        Application.Quit();
     }
 }

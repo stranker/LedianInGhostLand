@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{86B8D453-3322-1423-05E3-92510B4C87ED}</ProjectGuid>
+    <ProjectGuid>{4855A040-C27F-3DA1-D3EF-C1B1DACB91FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,7 +67,9 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\ObjectScript\Ammo.cs" />
     <Compile Include="Assets\Scripts\ObjectScript\Fantasma.cs" />
+    <Compile Include="Assets\Scripts\ObjectScript\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\ObjectScript\Flower.cs" />
     <Compile Include="Assets\Scripts\ObjectScript\Flowerator.cs" />
     <Compile Include="Assets\Scripts\ObjectScript\Matatrampas.cs" />
@@ -77,10 +79,10 @@
     <Compile Include="Assets\Scripts\ScenesScript\MainMenu.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Daniel/Desktop/Proyectos/Unity/LedianInGhostLand/Ledian in Ghostland/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Desktop/Proyectos/Unity/LedianInGhostLandFinal/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Daniel/Desktop/Proyectos/Unity/LedianInGhostLand/Ledian in Ghostland/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Desktop/Proyectos/Unity/LedianInGhostLandFinal/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -316,7 +318,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BEF03709-C190-D42F-7632-8AD99A9A9BEB}</Project>
+      <Project>{596DC29F-A5D6-099F-A8BB-A5AED8EB82AA}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

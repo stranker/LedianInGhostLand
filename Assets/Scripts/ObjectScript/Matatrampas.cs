@@ -74,4 +74,8 @@ public class Matatrampas : MonoBehaviour {
     {
         return ammo;
     }
+    public void AddAmo(int amm)
+    {
+        ammo += amm;
+    }
 }

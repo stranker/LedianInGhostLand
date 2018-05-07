@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - Ghost
   - Flower
+  - Ammo
   layers:
   - Default
   - TransparentFX

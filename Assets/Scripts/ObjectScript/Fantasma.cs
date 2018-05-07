@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class Fantasma : MonoBehaviour {
-    [SerializeField] private int speed;
-    [SerializeField] private float timeMove;
-    [SerializeField] private Vector3 direction;
-
+    [SerializeField] GameObject ammo;
+    private float timeMove;
+    private Vector3 direction;
+    private int speed;
     private int life;
     private int points;
     // Use this for initialization
@@ -58,7 +58,12 @@ public class Fantasma : MonoBehaviour {
             {
                 GameManager.ghostKilled++;
                 GameManager.gamePoints += points;
+                if (UnityEngine.Random.Range(0, 10) > 5)
+                {
+                    Instantiate(ammo, new Vector3(transform.position.x,1, transform.position.z), transform.rotation, transform.parent);
+                }
                 Destroy(this.gameObject);
+
             }
         }
     }

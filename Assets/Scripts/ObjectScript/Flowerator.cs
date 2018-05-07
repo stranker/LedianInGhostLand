@@ -83,4 +83,8 @@ public class Flowerator : MonoBehaviour {
     {
         return ammo;
     }
+    public void AddAmo(int amm)
+    {
+        ammo += amm;
+    }
 }

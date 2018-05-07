@@ -11,6 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameLoop.unity
     guid: b0386b82fb41eb44da207affeaa05184
-  - enabled: 1
-    path: Assets/Scenes/FinalScreen.unity
-    guid: 600eaf5379929344a9b7879e8a25ba18
+  m_configObjects: {}

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland", "Assembly-CSharp.csproj", "{86B8D453-3322-1423-05E3-92510B4C87ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland", "Assembly-CSharp-firstpass.csproj", "{BEF03709-C190-D42F-7632-8AD99A9A9BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledian in Ghostland", "Assembly-CSharp-Editor-firstpass.csproj", "{A1342FFE-C660-9FE0-DF01-090AD5232195}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86B8D453-3322-1423-05E3-92510B4C87ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B8D453-3322-1423-05E3-92510B4C87ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B8D453-3322-1423-05E3-92510B4C87ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B8D453-3322-1423-05E3-92510B4C87ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF03709-C190-D42F-7632-8AD99A9A9BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF03709-C190-D42F-7632-8AD99A9A9BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF03709-C190-D42F-7632-8AD99A9A9BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF03709-C190-D42F-7632-8AD99A9A9BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1342FFE-C660-9FE0-DF01-090AD5232195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1342FFE-C660-9FE0-DF01-090AD5232195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1342FFE-C660-9FE0-DF01-090AD5232195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1342FFE-C660-9FE0-DF01-090AD5232195}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -317,7 +317,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (other.gameObject.tag == "Ammo")
             {
-                Debug.Log("xd");
                 AddAmmo(10, 20);
                 Destroy(other.gameObject);
             }

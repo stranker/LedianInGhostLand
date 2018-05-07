@@ -4,3 +4,11 @@ Ledian in Ghostland/\.vs/Ledian in Ghostland/v15/
 Ledian in Ghostland/Library/
 
 Ledian in Ghostland/UnityPackageManager/
+.vs/LedianInGhostLand/v15/.suo
+.vs/LedianInGhostLand/v15/.suo
+*.ide
+*.lock
+*.ide-shm
+Library/AnnotationManager
+Library/assetDatabase3
+*.ide-wal

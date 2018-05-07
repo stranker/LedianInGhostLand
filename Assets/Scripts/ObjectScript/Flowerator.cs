@@ -42,7 +42,7 @@ public class Flowerator : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && canShoot && magazine > 0 && !reloading)
         {
             canShoot = false;
-            flower = Instantiate(flowerPrefab, shootPosition.transform.position,transform.rotation,transform.parent.parent.parent);
+            flower = Instantiate(flowerPrefab, shootPosition.transform.position,flowerPrefab.transform.rotation,transform.parent.parent.parent);
             flower.GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * speed;
             magazine--;
         }

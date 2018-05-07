@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Matatrampas : MonoBehaviour {
-    [SerializeField] private int distance;
+    private int distance;
     private int clip;
     private int magazine;
     private int ammo;

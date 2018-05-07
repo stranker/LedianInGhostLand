@@ -136,6 +136,7 @@ public class GameManager : MonoBehaviour {
                 }
             }
         }
+
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -147,28 +148,27 @@ public class GameManager : MonoBehaviour {
                 {
                     case 0:
                         {
-                            Instantiate(tileChurch, position, transform.rotation, terrain.transform);
+                            Instantiate(tileChurch, position, tileChurch.transform.rotation, terrain.transform);
                             break;
                         }
                     case 1:
                         {
-                            Instantiate(tileBarril, position, transform.rotation, terrain.transform);
+                            Instantiate(tileBarril, position, tileBarril.transform.rotation, terrain.transform);
                             break;
                         }
                     case 2:
                         {
-                            Instantiate(tileDer, position, transform.rotation, terrain.transform);
+                            Instantiate(tileDer, position, tileDer.transform.rotation, terrain.transform);
                             break;
                         }
                     case 3:
                         {
-                            Instantiate(tileIzq, position, transform.rotation, terrain.transform);
+                            Instantiate(tileIzq, position, tileIzq.transform.rotation, terrain.transform);
                             break;
                         }
                     default:
                         break;
                 }
-                
             }
         }
     }

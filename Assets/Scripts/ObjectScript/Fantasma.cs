@@ -63,7 +63,6 @@ public class Fantasma : MonoBehaviour {
                     Instantiate(ammo, new Vector3(transform.position.x,1, transform.position.z), transform.rotation, transform.parent);
                 }
                 Destroy(this.gameObject);
-
             }
         }
     }

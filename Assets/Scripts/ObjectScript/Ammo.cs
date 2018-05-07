@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.Characters.FirstPerson;
 
 public class Ammo : MonoBehaviour {
 
-    // Use this for initialization
+    private int rotateSpeed = 40;
+	// Update is called once per frame
+	void Update () {
+        transform.Rotate(transform.up, Time.deltaTime * rotateSpeed);
+	}
 }

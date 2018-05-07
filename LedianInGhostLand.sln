@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedianInGhostLand.Plugins", "LedianInGhostLand.Plugins.csproj", "{00C8C597-6E88-7243-BB4B-41BFB5328C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedianInGhostLand", "LedianInGhostLand.csproj", "{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedianInGhostLand.Editor.Plugins", "LedianInGhostLand.Editor.Plugins.csproj", "{0BE1990D-1064-321A-8B6C-B9696305E7B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00C8C597-6E88-7243-BB4B-41BFB5328C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C8C597-6E88-7243-BB4B-41BFB5328C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C8C597-6E88-7243-BB4B-41BFB5328C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C8C597-6E88-7243-BB4B-41BFB5328C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE1990D-1064-321A-8B6C-B9696305E7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE1990D-1064-321A-8B6C-B9696305E7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE1990D-1064-321A-8B6C-B9696305E7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE1990D-1064-321A-8B6C-B9696305E7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

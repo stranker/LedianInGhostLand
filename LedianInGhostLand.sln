@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedianInGhostLand.Plugins", "LedianInGhostLand.Plugins.csproj", "{00C8C597-6E88-7243-BB4B-41BFB5328C91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedianInGhostLand", "LedianInGhostLand.csproj", "{A259CD09-19F7-B1E0-A3AA-37C6F03B386F}"
